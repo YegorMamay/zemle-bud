@@ -1,31 +1,38 @@
 .page-header {
-    padding: 10px 0;
-    background-color: $headerBgColor;
-    color: $headerFontColor;
-    box-shadow: $shadow;
+  padding-bottom: 10px;
+  background-color: transparent;
+  color: $themeColorOne;
+  position: relative;
+  z-index: 5;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0 10px;
+
+    & .phone {
+      width: calc(100% - 240px);
+
+      &-item {
+        margin-right: 5px;
+        margin-left: 0;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
 
 }
 
-.fixed-to-top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    z-index: 33;
-
-    //xs 544
-    @media #{$mobile} {
-        display: none;
+@media screen and (min-width: 1200px) {
+  .page-header {
+    &__container {
+      & .phone-item {
+        margin-right: 5%;
+      }
     }
-
-    //sm 545 - 768
-    @media #{$tablet} {
-        display: none;
-    }
-
-    //md 769 - 1024
-    @media #{$laptop} {
-        display: none;
-    }
+  }
 }

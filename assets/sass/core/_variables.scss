@@ -1,12 +1,29 @@
 $debug: false !default;
 $image-url-path: "assets/img/" !default;
 $font-url-path: "assets/fonts/" !default;
+$primary_color_1: #ffffff !default;
+$primary_color_2: #000000 !default;
+
+//Other
+$icon_bg_color: linear-gradient(to top, #6083d9, #87b0f0), linear-gradient(to bottom, #192f34, #192f34);
+$border_round_radius: 50%;
+$border_small_radius: 5px;
+$light_border_color: rgba(#86afef, 0.15);
+$light_gradient_bg: linear-gradient(to top, #ebf0f8, #f2f7ff);
+$light_text_color: #9dacc4;
+$accent_color: #f6930a;
+
+//buttons
+$main_btn_bg_color: linear-gradient(to top, #f75c2e, #f6940a);
+$second_btn_bg_color: linear-gradient(to top, #6083d9, #87b0f0);
+$button_box_shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.07);
+$button_hover_box_shadow: inset 0px -60px 0 0 rgba(0, 0, 0, 0.07);
 
 // BRAND
-$themeColorOne: #2c3e50; // Обычно самый темный цвет. Используется для:
+$themeColorOne: #192f34; // Обычно самый темный цвет. Используется для:
 // заголовков h1-h6 - $titleFontColor и других. 
 
-$themeColorTwo: #e74c3c; // Основной "брендовый" цвет.
+$themeColorTwo: #7298e4; // Основной "брендовый" цвет.
 // Поменять значение этой переменной согласно макета обязательно!
 
 $borderRadius: 0;
@@ -18,8 +35,8 @@ $selectionBgColor: $themeColorTwo;
 $selectionFontColor: #fff;
 
 // BODY
-$bodyBgColor: #fff; //white
-$bodyFontColor: #000; // black
+$bodyBgColor: $primary_color_1; //white
+$bodyFontColor: $themeColorOne; // black
 
 // HEADER: цвет фона шапки сайта
 $headerBgColor: $themeColorOne;

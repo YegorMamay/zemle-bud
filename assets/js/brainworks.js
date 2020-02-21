@@ -256,4 +256,12 @@
     $(".js-menu-close, .menu-link").on("click", function() {
         $("body").removeClass("body-overflow");
     });
+    $(window).on("resize", function() {
+        var blockHeader = $(".js-header");
+        var headerHeight = blockHeader.outerHeight();
+        if ($(window).width() > 1100 && $(".home").length > 0) {
+            blockHeader.css("margin-bottom", headerHeight * -1);
+        }
+    });
+    $(window).trigger("resize");
 })(window, document, jQuery, window.jpAjax);

@@ -29,29 +29,48 @@
     <link rel="icon" href="<?php echo esc_url(get_template_directory_uri() . '/assets/img/favicon.ico'); ?>"
           type="image/x-icon">
     <?php wp_head(); ?>
+    <script type="text/javascript" src="/wp-content/themes/zemle-bud/assets/js/typed.min.js"></script>
 </head>
 <body <?php body_class(); ?> id="top">
 
 <?php wp_body_open(); ?>
 <div class="wrapper js-container"><!--Do not delete!-->
-
-    <header class="page-header fixed-to-top">
+    <header class="page-header js-header hide-on-mobile">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row">
                 <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
                     <div class="logo">
 	                    <?php get_default_logo_link([
                             'name'    => 'logo.svg',
                             'options' => [
                                 'class'  => 'logo-img',
-                                'width'  => 100,
+                                'width'  => 150,
                                 'height' => 50,
                                 ],
                             ])
                         ?>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
+                <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
+                    <div class="page-header__container">
+                        <?php if (has_phones()) { ?>
+                            <ul class="phone">
+                                <?php foreach (get_phones() as $phone) { ?>
+                                    <li class="phone-item">
+                                        <span class="phone-icon">
+                                            <i class="far fa-phone-alt"></i>
+                                        </span>
+                                        <a href="tel:<?php echo esc_attr(get_phone_number($phone)); ?>" class="phone-number">
+                                            <?php echo esc_html($phone); ?>
+                                        </a>
+                                    </li>
+                                <?php } ?>
+                            </ul>
+                        <?php } ?>
+                        <button type="button" class="btn btn-secondary <?php the_lang_class('js-call-back'); ?>">
+                            <?php _e('Call back', 'brainworks'); ?>
+                        </button>
+                    </div>
                     <?php if (has_nav_menu('main-nav')) { ?>
                         <nav class="nav js-menu">
                             <button type="button" tabindex="0" class="menu-item-close menu-close js-menu-close"></button>
@@ -67,23 +86,18 @@
                         </nav>
                     <?php } ?>
                 </div>
-                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                    <button type="button" class="btn btn-secondary btn-block <?php the_lang_class('js-call-back'); ?>">
-                        <?php _e('Call back', 'brainworks'); ?>
-                    </button>
-                </div>
             </div>
         </div>
     </header>
 
     <!-- Mobile menu start-->
     <div class="nav-mobile-header">
+        <div class="logo"><?php get_default_logo_link(); ?></div>
         <button class="hamburger js-hamburger" type="button" tabindex="0">
         <span class="hamburger-box">
             <span class="hamburger-inner"></span>
         </span>
         </button>
-        <div class="logo"><?php get_default_logo_link(); ?></div>
     </div>
     <?php if (has_nav_menu('main-nav')) { ?>
         <nav class="nav js-menu hide-on-desktop">

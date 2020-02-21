@@ -1,14 +1,5 @@
-//@font-face {
-//    font-family: 'UniSansBook';
-//    src: url("assets/fonts/UniSansBook.ttf")
-//}
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700,700i&display=swap&subset=cyrillic-ext');
 
-//@import url('https://fonts.googleapis.com/css?family=Comfortaa|Lobster&subset=cyrillic');
-
-//font-family: 'Roboto', sans-serif;
-$font-family-sans-serif: 'Arial', 'Helvetica', sans-serif;
-$font-family-serif: 'Georgia', 'Times New Roman', 'Times', serif;
-$font-family-monospace: 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;
-
+$font-family-sans-serif: 'Ubuntu', sans-serif;
 $fontFamilyOne: $font-family-sans-serif; // titles
 $fontFamilyTwo: $font-family-sans-serif; // body
