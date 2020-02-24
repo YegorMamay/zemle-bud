@@ -96,6 +96,13 @@ $advantages_content = get_field('advantages_content');
         </div>
     </div>
 </section>
+<div class="block-special">
+    <div class="container">
+        <div class="block-special__wrapper">
+
+        </div>
+    </div>
+</div>
 <div class="container">
 
 <?php get_template_part('loops/content', 'home'); ?>
