@@ -46,6 +46,56 @@ $array_field = json_encode($array_field);
         cursorChar: '',
     });
 </script>
+<?php
+$advantages_elem_id = get_post_meta(get_the_ID(), 'advantages_image', true);
+$advantages_image = wp_get_attachment_url($advantages_elem_id);
+$advantages_content = get_field('advantages_content');
+?>
+<section class="advantages-section">
+    <div class="container">
+        <h2 class="advanced-section__title main-title h2 text-center"><?php echo $advantages_content['advantages_title']; ?></h2>
+        <div class="advantages-section__description h2 text-center"><?php echo $advantages_content['advantages_description']; ?></div>
+    </div>
+    <div class="advantages-section__container" style="background: url('<?php echo $advantages_image; ?>') no-repeat bottom / cover">
+        <div class="container">
+            <div class="advantages-section__wrapper">
+                <?php
+                $left_column = get_field('advantages_left_column');
+                $left_column_title = $left_column['advantages_left_column_title'];
+                $left_column_items = $left_column['item_list'];
+                $right_column = get_field('advantages_right_column');
+                $right_column_title = $right_column['advantages_right_column_title'];
+                $right_column_items = $right_column['item_list'];
+                ?>
+                <div class="advantages-section__item">
+                    <div class="advantages-section__item-wrapper">
+                        <p class="advantages-section__item-title"><?php echo $left_column_title; ?></p>
+                        <?php foreach ($left_column_items as $content) { ?>
+                            <div class="advantages-section__field">
+                                <img class="advantages-section__icon" src="/wp-content/themes/zemle-bud/assets/img/checkmark.svg" alt="icon">
+                                <span class="advantages-section__text"><?php echo $content['item_text']; ?></span>
+                            </div>
+                        <?php } ?>
+                    </div>
+                </div>
+                <div class="advantages-section__image-wrapper">
+                    <img class="advantages-section__image" src="/wp-content/themes/zemle-bud/assets/img/vs.svg" alt="icon">
+                </div>
+                <div class="advantages-section__item">
+                    <div class="advantages-section__item-wrapper">
+                        <p class="advantages-section__item-title"><?php echo $right_column_title; ?></p>
+                        <?php foreach ($right_column_items as $content) { ?>
+                            <div class="advantages-section__field">
+                                <img class="advantages-section__icon" src="/wp-content/themes/zemle-bud/assets/img/cross.svg" alt="icon">
+                                <span class="advantages-section__text"><?php echo $content['item_text']; ?></span>
+                            </div>
+                        <?php } ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <div class="container">
 
 <?php get_template_part('loops/content', 'home'); ?>
