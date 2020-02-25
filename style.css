@@ -12435,11 +12435,50 @@ select {
   justify-content: flex-start;
   padding-left: 20px;
   margin-bottom: 25px;
+  position: relative;
+  z-index: 5;
 }
 
 .block-prices__arrow {
   width: 70px;
   margin-left: 20px;
+}
+
+@media screen and (max-width: 991px) {
+  .block-prices {
+    height: auto;
+  }
+  .block-prices__form-wrapper {
+    height: auto;
+    width: 100%;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .block-prices__arrow {
+    display: none;
+  }
+  .block-prices__image {
+    display: none;
+  }
+  .block-prices__form-title {
+    padding-left: 0;
+    font-size: 22px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .block-prices__form {
+    padding: 0 5px;
+  }
 }
 
 #price-form .formcraft-css {
@@ -12593,6 +12632,42 @@ select {
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.07);
   -webkit-transform: scale(0.98);
   transform: scale(0.98);
+}
+
+@media screen and (max-width: 991px) {
+  #price-form .form-page-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+  }
+  #price-form .fc-form {
+    padding: 10px;
+  }
+  #price-form .form-element {
+    width: 100% !important;
+    margin-bottom: 12px;
+  }
+  #price-form .form-element-html {
+    padding: 0;
+  }
+  #price-form .form-element-html input {
+    padding: 10px;
+  }
+  #price-form .form-element-html .formcraft-icon {
+    right: 0;
+    left: auto;
+  }
 }
 
 ol.commentlist .comment-body {

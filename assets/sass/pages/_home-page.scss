@@ -553,11 +553,52 @@
     justify-content: flex-start;
     padding-left: 20px;
     margin-bottom: 25px;
+    position: relative;
+    z-index: 5;
   }
 
   &__arrow {
     width: 70px;
     margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .block-prices {
+    height: auto;
+
+    &__form-wrapper {
+      height: auto;
+      width: 100%;
+      max-width: 450px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__arrow {
+      display: none;
+    }
+
+    &__image {
+      display: none;
+    }
+
+    &__form-title {
+      padding-left: 0;
+      font-size: 22px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 5px;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .block-prices {
+    &__form {
+      padding: 0 5px;
+    }
   }
 }
 
@@ -660,6 +701,40 @@
         @extend %smooth_animation;
         box-shadow: $button_box_shadow;
         transform: scale(0.98);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #price-form {
+    & .form-page-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    & .fc-form {
+      padding: 10px;
+    }
+
+    & .form-element {
+      width: 100% !important;
+      margin-bottom: 12px;
+    }
+
+    & .form-element-html {
+      padding: 0;
+
+      & input {
+        padding: 10px;
+      }
+
+      & .formcraft-icon {
+        right: 0;
+        left: auto;
       }
     }
   }
