@@ -14,7 +14,8 @@ $main_content = get_field('main_content');
     <div class="container">
         <div class="top-section__wrapper">
             <h1 class="top-section__title"><?php echo $main_content['main_title']; ?></h1>
-            <div id="dynamic-text" class="top-section__dynamic-text"><?php echo $main_content['main_dynamic_array'][0]['main_dynamic_text']; ?></div>
+            <div id="dynamic-text"
+                 class="top-section__dynamic-text"><?php echo $main_content['main_dynamic_array'][0]['main_dynamic_text']; ?></div>
             <div class="top-section__description">
                 <div class="top-section__description-wrapper">
                     <?php echo $main_content['main_description']; ?>
@@ -29,7 +30,7 @@ $main_content = get_field('main_content');
     </div>
 </div>
 <?php foreach ($main_content['main_dynamic_array'] as $text) {
-    $array_field[] =  $text['main_dynamic_text'];
+    $array_field[] = $text['main_dynamic_text'];
 }
 $array_field = json_encode($array_field);
 ?>
@@ -56,7 +57,8 @@ $advantages_content = get_field('advantages_content');
         <h2 class="advantages-section__title main-title h2 text-center"><?php echo $advantages_content['advantages_title']; ?></h2>
         <div class="advantages-section__description h2 text-center"><?php echo $advantages_content['advantages_description']; ?></div>
     </div>
-    <div class="advantages-section__container" style="background: url('<?php echo $advantages_image; ?>') no-repeat bottom / cover">
+    <div class="advantages-section__container"
+         style="background: url('<?php echo $advantages_image; ?>') no-repeat bottom / cover">
         <div class="container">
             <div class="advantages-section__wrapper">
                 <?php
@@ -72,21 +74,24 @@ $advantages_content = get_field('advantages_content');
                         <p class="advantages-section__item-title"><?php echo $left_column_title; ?></p>
                         <?php foreach ($left_column_items as $content) { ?>
                             <div class="advantages-section__field">
-                                <img class="advantages-section__icon" src="/wp-content/themes/zemle-bud/assets/img/checkmark.svg" alt="icon">
+                                <img class="advantages-section__icon"
+                                     src="/wp-content/themes/zemle-bud/assets/img/checkmark.svg" alt="icon">
                                 <span class="advantages-section__text"><?php echo $content['item_text']; ?></span>
                             </div>
                         <?php } ?>
                     </div>
                 </div>
                 <div class="advantages-section__image-wrapper">
-                    <img class="advantages-section__image" src="/wp-content/themes/zemle-bud/assets/img/vs.svg" alt="icon">
+                    <img class="advantages-section__image" src="/wp-content/themes/zemle-bud/assets/img/vs.svg"
+                         alt="icon">
                 </div>
                 <div class="advantages-section__item">
                     <div class="advantages-section__item-wrapper">
                         <p class="advantages-section__item-title"><?php echo $right_column_title; ?></p>
                         <?php foreach ($right_column_items as $content) { ?>
                             <div class="advantages-section__field">
-                                <img class="advantages-section__icon" src="/wp-content/themes/zemle-bud/assets/img/cross.svg" alt="icon">
+                                <img class="advantages-section__icon"
+                                     src="/wp-content/themes/zemle-bud/assets/img/cross.svg" alt="icon">
                                 <span class="advantages-section__text"><?php echo $content['item_text']; ?></span>
                             </div>
                         <?php } ?>
@@ -99,7 +104,8 @@ $advantages_content = get_field('advantages_content');
 <?php
 $special_top = get_field('special_top');
 ?>
-<section class="block-special" style="background: url('<?php echo $special_top['special_image']; ?>') no-repeat center / cover">
+<section class="block-special"
+         style="background: url('<?php echo $special_top['special_image']; ?>') no-repeat center / cover">
     <div class="container">
         <div class="block-special__wrapper">
             <div class="block-special__item">
@@ -109,7 +115,8 @@ $special_top = get_field('special_top');
                 <h2 class="block-special__description"><?php echo $special_top['special_description']; ?></h2>
             </div>
             <div class="block-special__item">
-                <button type="button" class="btn btn-primary js-special-top"><?php echo $special_top['special_text_button']; ?></button>
+                <button type="button"
+                        class="btn btn-primary js-special-top"><?php echo $special_top['special_text_button']; ?></button>
             </div>
         </div>
     </div>
@@ -123,17 +130,56 @@ $special_top = get_field('special_top');
             <div class="block-prices__form">
                 <div class="block-prices__form-title">
                     <?php echo get_post_meta(get_the_ID(), 'price_form_title', true); ?>
-                    <img class="block-prices__arrow" src="/wp-content/themes/zemle-bud/assets/img/arrow-form.svg" alt="arrow">
+                    <img class="block-prices__arrow" src="/wp-content/themes/zemle-bud/assets/img/arrow-form.svg"
+                         alt="arrow">
                 </div>
                 <?php echo do_shortcode('[fc id=\'3\'][/fc]'); ?>
             </div>
         </div>
     </div>
 </section>
+<section class="block-works">
+    <div class="container">
+        <h2 class="main-title"><?php echo get_post_meta(get_the_ID(), 'work_title', true); ?></h2>
+        <div class="block-works__wrapper">
+            <div class="row">
+                <?php
+                global $post;
+                $args = array(
+                    'post_type' => 'how_work',
+                    'publish' => true,
+                    'posts_per_page' => 20
+                );
+                $benefits_item = get_posts($args);
+                $count_item = 1;
+                foreach ($benefits_item as $post) {
+                    ?>
+                    <div class="col-12 col-md-6 col-lg-4 block-works__item-wrapper">
+                        <?php $post_thumbnail_id = get_post_thumbnail_id($post); ?>
+                        <img class="block-works__image"
+                             src="<?php echo wp_get_attachment_image_url($post_thumbnail_id, 'full'); ?>" alt="icon">
+                        <div class="block-works__item">
+                            <div class="block-works__caption">
+                                <div class="block-works__item-title"><?php the_title(); ?></div>
+                                <span class="block-works__counter"><?php echo $count_item; ?></span>
+                            </div>
+                        </div>
+                    </div>
+                    <?php
+                    $count_item++;
+                }
+                wp_reset_postdata();
+                ?>
+            </div>
+        </div>
+        <p class="block-works__description"><?php echo get_post_meta(get_the_ID(), 'work_description', true); ?></p>
+    </div>
+</section>
 <?php
 $special_bottom = get_field('special_bottom');
 ?>
-<section class="block-special" style="background: url('<?php echo $special_bottom['special_image']; ?>') no-repeat center / cover">
+<section class="block-special"
+         style="background: url('<?php echo $special_bottom['special_image']; ?>') no-repeat center / cover">
     <div class="container">
         <div class="block-special__wrapper">
             <div class="block-special__item">
@@ -143,7 +189,8 @@ $special_bottom = get_field('special_bottom');
                 <h2 class="block-special__description"><?php echo $special_bottom['special_description']; ?></h2>
             </div>
             <div class="block-special__item">
-                <button type="button" class="btn btn-primary js-special-bottom"><?php echo $special_bottom['special_text_button']; ?></button>
+                <button type="button"
+                        class="btn btn-primary js-special-bottom"><?php echo $special_bottom['special_text_button']; ?></button>
             </div>
         </div>
     </div>
