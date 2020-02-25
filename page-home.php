@@ -138,6 +138,18 @@ $special_top = get_field('special_top');
         </div>
     </div>
 </section>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+        crossorigin="anonymous"></script>
+<section class="gallery-section">
+    <div class="container">
+        <h2 class="main-title"><?php echo get_post_meta(get_the_ID(), 'our_works_title', true); ?></h2>
+        <div class="gallery-section__wrapper">
+            <?php echo do_shortcode('[ess_grid alias="gallery"]'); ?>
+        </div>
+    </div>
+</section>
 <section class="block-works" id="work">
     <div class="container">
         <h2 class="main-title"><?php echo get_post_meta(get_the_ID(), 'work_title', true); ?></h2>
