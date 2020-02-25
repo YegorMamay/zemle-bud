@@ -96,13 +96,24 @@ $advantages_content = get_field('advantages_content');
         </div>
     </div>
 </section>
-<div class="block-special">
+<?php
+$special_top = get_field('special_top');
+?>
+<section class="block-special" style="background: url('<?php echo $special_top['special_image']; ?>') no-repeat center / cover">
     <div class="container">
         <div class="block-special__wrapper">
-
+            <div class="block-special__item">
+                <div class="block-special__text-wrapper">
+                    <div class="block-special__text"><?php echo $special_top['special_title']; ?></div>
+                </div>
+                <h2 class="block-special__description"><?php echo $special_top['special_description']; ?></h2>
+            </div>
+            <div class="block-special__item">
+                <button type="button" class="btn btn-primary"><?php echo $special_top['special_text_button']; ?></button>
+            </div>
         </div>
     </div>
-</div>
+</section>
 <div class="container">
 
 <?php get_template_part('loops/content', 'home'); ?>
