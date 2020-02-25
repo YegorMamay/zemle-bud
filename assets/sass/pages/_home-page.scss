@@ -807,3 +807,14 @@
     color: #9dacc4;
   }
 }
+
+.review-section {
+  padding: 5% 0;
+  width: 100%;
+
+  &__wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 45px auto;
+  }
+}

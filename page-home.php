@@ -138,7 +138,7 @@ $special_top = get_field('special_top');
         </div>
     </div>
 </section>
-<section class="block-works">
+<section class="block-works" id="work">
     <div class="container">
         <h2 class="main-title"><?php echo get_post_meta(get_the_ID(), 'work_title', true); ?></h2>
         <div class="block-works__wrapper">
@@ -192,6 +192,14 @@ $special_bottom = get_field('special_bottom');
                 <button type="button"
                         class="btn btn-primary js-special-bottom"><?php echo $special_bottom['special_text_button']; ?></button>
             </div>
+        </div>
+    </div>
+</section>
+<section class="review-section">
+    <div class="container">
+        <h2 class="main-title"><?php echo get_post_meta(get_the_ID(), 'review_title', true); ?></h2>
+        <div class="review-section__wrapper">
+            <?php echo do_shortcode('[bw-reviews]'); ?>
         </div>
     </div>
 </section>

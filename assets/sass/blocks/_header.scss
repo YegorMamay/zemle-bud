@@ -1,9 +1,18 @@
+.home {
+  & .page-header {
+    box-shadow: none;
+    margin-bottom: 0;
+  }
+}
+
 .page-header {
   padding-bottom: 10px;
   background-color: transparent;
   color: $themeColorOne;
   position: relative;
   z-index: 5;
+  box-shadow: 0 0 10px 1px $light_text_color;
+  margin-bottom: 25px;
 
   &__container {
     display: flex;
