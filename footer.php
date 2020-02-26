@@ -1,4 +1,4 @@
-<footer class="footer js-footer">
+<footer class="footer js-footer" id="contacts">
     <div class="footer__wrapper">
         <div class="container">
             <div class="row">

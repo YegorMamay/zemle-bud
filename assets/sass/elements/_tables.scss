@@ -1,24 +1,39 @@
 table {
-    border-collapse: collapse;
-    //border-spacing: 2px;
-    //background-color: $tableBgColor;
-    width: 100%;
-    text-align: center;
+  border-collapse: collapse;
+  //border-spacing: 2px;
+  //background-color: $tableBgColor;
+  width: 100%;
+  text-align: center;
 }
 
 tr > th:first-child,
 tr > td:first-child {
-    font-weight: 600;
-    text-align: left;
+  text-align: left;
+}
+
+tr > th:last-child,
+tr > td:last-child {
+  font-weight: 700;
+  text-align: center;
 }
 
 tbody > tr:first-child th {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 table, thead, tfoot, tbody, tr, th, td {
-    border: 1px solid $tableBorderColor;
-    padding: 5px;
+  border: 1px solid transparent;
+  padding: 15px;
+}
+
+table {
+  & tr {
+    border-bottom: 2px solid $table_border_color;
+
+    &:first-child {
+      border-bottom: none;
+    }
+  }
 }
 
 // Widget Calendar

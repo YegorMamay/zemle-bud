@@ -12444,6 +12444,12 @@ select {
   margin-left: 20px;
 }
 
+.block-prices__table-wrapper {
+  width: 100%;
+  max-width: 100%;
+  padding: 30px 0;
+}
+
 @media screen and (max-width: 991px) {
   .block-prices {
     height: auto;
@@ -12766,6 +12772,31 @@ select {
 
 .gallery-section__wrapper {
   padding: 30px 0 20px;
+}
+
+.vc-th {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ebf0f8), to(#f2f7ff));
+  background: linear-gradient(to top, #ebf0f8, #f2f7ff);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.vc-th td {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.vc-th td span {
+  color: #7298e4;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.vc_row {
+  width: 100%;
+  max-width: 100%;
+  overflow: auto;
+  padding-bottom: 10px;
 }
 
 ol.commentlist .comment-body {
@@ -13567,8 +13598,13 @@ table {
 
 tr > th:first-child,
 tr > td:first-child {
-  font-weight: 600;
   text-align: left;
+}
+
+tr > th:last-child,
+tr > td:last-child {
+  font-weight: 700;
+  text-align: center;
 }
 
 tbody > tr:first-child th {
@@ -13576,8 +13612,16 @@ tbody > tr:first-child th {
 }
 
 table, thead, tfoot, tbody, tr, th, td {
-  border: 1px solid #fff;
-  padding: 5px;
+  border: 1px solid transparent;
+  padding: 15px;
+}
+
+table tr {
+  border-bottom: 2px solid #ebf0f8;
+}
+
+table tr:first-child {
+  border-bottom: none;
 }
 
 ul,

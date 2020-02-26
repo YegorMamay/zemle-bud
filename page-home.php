@@ -124,7 +124,9 @@ $special_top = get_field('special_top');
 <section class="block-prices" id="prices">
     <div class="container">
         <h2 class="main-title"><?php echo get_post_meta(get_the_ID(), 'price_title', true); ?></h2>
-        <?php get_template_part('loops/content', 'home'); ?>
+        <div class="block-prices__table-wrapper">
+            <?php get_template_part('loops/content', 'home'); ?>
+        </div>
         <div class="block-prices__form-wrapper" id="price-form">
             <img class="block-prices__image" src="/wp-content/themes/zemle-bud/assets/img/price.png" alt="decor image">
             <div class="block-prices__form">
@@ -203,7 +205,7 @@ $special_bottom = get_field('special_bottom');
         </div>
     </div>
 </section>
-<section class="review-section">
+<section class="review-section" id="reviews">
     <div class="container">
         <h2 class="main-title"><?php echo get_post_meta(get_the_ID(), 'review_title', true); ?></h2>
         <div class="review-section__wrapper">
