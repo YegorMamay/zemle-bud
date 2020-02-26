@@ -41,6 +41,8 @@
 @media screen and (min-width: 992px) {
   .footer {
     &__container {
+      padding-top: 26px;
+
       & .phone {
         flex-direction: row;
         justify-content: space-between;

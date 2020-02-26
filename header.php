@@ -111,6 +111,9 @@
             'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
             'depth' => 3
         )); ?>
+            <div class="mobile-block">
+                <?php echo do_shortcode('[bw-phone]'); ?>
+            </div>
         </nav>
     <?php } ?>
     <!-- Mobile menu end-->

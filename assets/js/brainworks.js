@@ -185,8 +185,14 @@
                         e.preventDefault();
                         var target = $(href[0] === "#" ? href : href.slice(1));
                         if (target.length) {
+                            var fixOffset;
+                            if ($(window).width() > 1100) {
+                                fixOffset = 0;
+                            } else {
+                                fixOffset = 75;
+                            }
                             $("html, body").animate({
-                                scrollTop: target.offset().top
+                                scrollTop: target.offset().top - fixOffset
                             }, animationSpeed);
                         } else if (href[0] === "/") {
                             location.href = href;

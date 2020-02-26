@@ -177,3 +177,28 @@
     }
   }
 }
+
+.mobile-block {
+  margin-top: 5%;
+
+  & .phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &-item {
+      padding: 5px;
+      margin: 0 0 5px;
+    }
+
+    &-number {
+      color: $primary_color_1;
+      display: block;
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+      padding: 8px 10px;
+    }
+  }
+}

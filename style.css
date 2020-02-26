@@ -12807,6 +12807,12 @@ select {
   box-shadow: 0 0 30px 0 rgba(90, 65, 51, 0.4) !important;
 }
 
+#top .pum-container .heading-cover {
+  color: #232323;
+  padding-top: 12px;
+  padding-bottom: 15px;
+}
+
 #top .pum-container .form-page-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14637,6 +14643,40 @@ hr.style-two {
   }
 }
 
+.mobile-block {
+  margin-top: 5%;
+}
+
+.mobile-block .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.mobile-block .phone-item {
+  padding: 5px;
+  margin: 0 0 5px;
+}
+
+.mobile-block .phone-number {
+  color: #ffffff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  padding: 8px 10px;
+}
+
 .sidebar .widget_nav_menu {
   -webkit-box-shadow: 0 0 10px rgba(25, 47, 52, 0.2);
   box-shadow: 0 0 10px rgba(25, 47, 52, 0.2);
@@ -14801,6 +14841,9 @@ hr.style-two {
 }
 
 @media screen and (min-width: 992px) {
+  .footer__container {
+    padding-top: 26px;
+  }
   .footer__container .phone {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
