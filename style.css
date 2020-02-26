@@ -128,7 +128,7 @@ q:after {
   content: none;
 }
 
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-secondary, .btn-secondary:hover, .btn-secondary:active, #top-form .form-element-html input:focus, #top-form .form-element-html textarea:focus, #top-form .form-element-html .submit-button, #top-form .form-element-html .submit-button:hover, #top-form .form-element-html .submit-button:active, #price-form .form-element-html input:focus, #price-form .form-element-html textarea:focus, #price-form .form-element-html .submit-button, #price-form .form-element-html .submit-button:hover, #price-form .form-element-html .submit-button:active, .review-social, .review-slider .slick-dots li, .review-slider .slick-dots li.slick-active, .review-slider .slick-arrow, a, .phone-number, .phone-number:hover, .nav .menu-link, .nav .sub-menu, .nav .sub-menu-link, .svg-icon {
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-secondary, .btn-secondary:hover, .btn-secondary:active, #top-form .form-element-html input:focus, #top-form .form-element-html textarea:focus, #top-form .form-element-html .submit-button, #top-form .form-element-html .submit-button:hover, #top-form .form-element-html .submit-button:active, #price-form .form-element-html input:focus, #price-form .form-element-html textarea:focus, #price-form .form-element-html .submit-button, #price-form .form-element-html .submit-button:hover, #price-form .form-element-html .submit-button:active, #top .pum-container .form-element-html input:focus, #top .pum-container .form-element-html textarea:focus, #top .pum-container .form-element-html .submit-button, #top .pum-container .form-element-html .submit-button:hover, #top .pum-container .form-element-html .submit-button:active, .review-social, .review-slider .slick-dots li, .review-slider .slick-dots li.slick-active, .review-slider .slick-arrow, a, .phone-number, .phone-number:hover, .nav .menu-link, .nav .sub-menu, .nav .sub-menu-link, .svg-icon {
   -webkit-transition: .2s;
   transition: .2s;
 }
@@ -10259,7 +10259,7 @@ table th[class*="col-"] {
   clear: both;
 }
 
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-secondary, .btn-secondary:hover, .btn-secondary:active, #top-form .form-element-html input:focus, #top-form .form-element-html textarea:focus, #top-form .form-element-html .submit-button, #top-form .form-element-html .submit-button:hover, #top-form .form-element-html .submit-button:active, #price-form .form-element-html input:focus, #price-form .form-element-html textarea:focus, #price-form .form-element-html .submit-button, #price-form .form-element-html .submit-button:hover, #price-form .form-element-html .submit-button:active, .review-social, .review-slider .slick-dots li, .review-slider .slick-dots li.slick-active, .review-slider .slick-arrow, a, .phone-number, .phone-number:hover, .nav .menu-link, .nav .sub-menu, .nav .sub-menu-link, .svg-icon {
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-secondary, .btn-secondary:hover, .btn-secondary:active, #top-form .form-element-html input:focus, #top-form .form-element-html textarea:focus, #top-form .form-element-html .submit-button, #top-form .form-element-html .submit-button:hover, #top-form .form-element-html .submit-button:active, #price-form .form-element-html input:focus, #price-form .form-element-html textarea:focus, #price-form .form-element-html .submit-button, #price-form .form-element-html .submit-button:hover, #price-form .form-element-html .submit-button:active, #top .pum-container .form-element-html input:focus, #top .pum-container .form-element-html textarea:focus, #top .pum-container .form-element-html .submit-button, #top .pum-container .form-element-html .submit-button:hover, #top .pum-container .form-element-html .submit-button:active, .review-social, .review-slider .slick-dots li, .review-slider .slick-dots li.slick-active, .review-slider .slick-arrow, a, .phone-number, .phone-number:hover, .nav .menu-link, .nav .sub-menu, .nav .sub-menu-link, .svg-icon {
   -webkit-transition: .2s;
   transition: .2s;
 }
@@ -10854,7 +10854,7 @@ select {
   }
 }
 
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-secondary, .btn-secondary:hover, .btn-secondary:active, #top-form .form-element-html input:focus, #top-form .form-element-html textarea:focus, #top-form .form-element-html .submit-button, #top-form .form-element-html .submit-button:hover, #top-form .form-element-html .submit-button:active, #price-form .form-element-html input:focus, #price-form .form-element-html textarea:focus, #price-form .form-element-html .submit-button, #price-form .form-element-html .submit-button:hover, #price-form .form-element-html .submit-button:active, .review-social, .review-slider .slick-dots li, .review-slider .slick-dots li.slick-active, .review-slider .slick-arrow, a, .phone-number, .phone-number:hover, .nav .menu-link, .nav .sub-menu, .nav .sub-menu-link, .svg-icon {
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-secondary, .btn-secondary:hover, .btn-secondary:active, #top-form .form-element-html input:focus, #top-form .form-element-html textarea:focus, #top-form .form-element-html .submit-button, #top-form .form-element-html .submit-button:hover, #top-form .form-element-html .submit-button:active, #price-form .form-element-html input:focus, #price-form .form-element-html textarea:focus, #price-form .form-element-html .submit-button, #price-form .form-element-html .submit-button:hover, #price-form .form-element-html .submit-button:active, #top .pum-container .form-element-html input:focus, #top .pum-container .form-element-html textarea:focus, #top .pum-container .form-element-html .submit-button, #top .pum-container .form-element-html .submit-button:hover, #top .pum-container .form-element-html .submit-button:active, .review-social, .review-slider .slick-dots li, .review-slider .slick-dots li.slick-active, .review-slider .slick-arrow, a, .phone-number, .phone-number:hover, .nav .menu-link, .nav .sub-menu, .nav .sub-menu-link, .svg-icon {
   -webkit-transition: .2s;
   transition: .2s;
 }
@@ -12333,7 +12333,7 @@ select {
   .block-special {
     background: #e0e4ec !important;
     height: auto;
-    padding: 2.5% 0;
+    padding: 30px 0;
   }
   .block-special__wrapper {
     -webkit-box-orient: vertical;
@@ -12797,6 +12797,206 @@ select {
   max-width: 100%;
   overflow: auto;
   padding-bottom: 10px;
+}
+
+#top .pum-container {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ebf0f8), to(#f2f7ff));
+  background: linear-gradient(to top, #ebf0f8, #f2f7ff);
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 30px 0 rgba(90, 65, 51, 0.4) !important;
+  box-shadow: 0 0 30px 0 rgba(90, 65, 51, 0.4) !important;
+}
+
+#top .pum-container .form-page-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 10px;
+}
+
+#top .pum-container .form-element {
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+#top .pum-container .pum-close {
+  border: none;
+  background: -webkit-gradient(linear, left bottom, left top, from(#6083d9), to(#87b0f0));
+  background: linear-gradient(to top, #6083d9, #87b0f0);
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+#top .pum-container .fc-form {
+  background: transparent !important;
+  border-radius: 5px;
+  border: 1px solid rgba(134, 175, 239, 0.15);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#top .pum-container .form-element-html {
+  padding: 0;
+}
+
+#top .pum-container .form-element-html input {
+  border-width: 2px;
+  border-color: #ffffff;
+  background: #ffffff;
+  color: #192f34;
+  font-size: 16px;
+  height: 60px;
+  border-radius: 5px;
+  padding-left: 45px;
+}
+
+#top .pum-container .form-element-html input::-webkit-input-placeholder {
+  color: #9dacc4;
+  font-size: 16px;
+}
+
+#top .pum-container .form-element-html input::-moz-placeholder {
+  color: #9dacc4;
+  font-size: 16px;
+}
+
+#top .pum-container .form-element-html input:-ms-input-placeholder {
+  color: #9dacc4;
+  font-size: 16px;
+}
+
+#top .pum-container .form-element-html input::-ms-input-placeholder {
+  color: #9dacc4;
+  font-size: 16px;
+}
+
+#top .pum-container .form-element-html input::placeholder {
+  color: #9dacc4;
+  font-size: 16px;
+}
+
+#top .pum-container .form-element-html input:focus {
+  border-color: #f6930a;
+}
+
+#top .pum-container .form-element-html textarea {
+  border-width: 2px;
+  border-color: transparent;
+  color: #192f34;
+  font-size: 16px;
+  height: 60px !important;
+  border-radius: 5px;
+}
+
+#top .pum-container .form-element-html textarea::-webkit-input-placeholder {
+  color: #9dacc4;
+  font-size: 16px;
+}
+
+#top .pum-container .form-element-html textarea::-moz-placeholder {
+  color: #9dacc4;
+  font-size: 16px;
+}
+
+#top .pum-container .form-element-html textarea:-ms-input-placeholder {
+  color: #9dacc4;
+  font-size: 16px;
+}
+
+#top .pum-container .form-element-html textarea::-ms-input-placeholder {
+  color: #9dacc4;
+  font-size: 16px;
+}
+
+#top .pum-container .form-element-html textarea::placeholder {
+  color: #9dacc4;
+  font-size: 16px;
+}
+
+#top .pum-container .form-element-html textarea:focus {
+  border-color: #f6930a;
+}
+
+#top .pum-container .form-element-html .formcraft-icon {
+  color: #9dacc4;
+  top: 8px;
+  right: auto;
+  left: 0;
+}
+
+#top .pum-container .form-element-html .error {
+  background: transparent;
+  top: 3px;
+}
+
+#top .pum-container .form-element-html .submit-button {
+  background: -webkit-gradient(linear, left bottom, left top, from(#f75c2e), to(#f6940a));
+  background: linear-gradient(to top, #f75c2e, #f6940a);
+  -webkit-box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.07);
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+#top .pum-container .form-element-html .submit-button:hover {
+  -webkit-box-shadow: inset 0px -60px 0 0 rgba(0, 0, 0, 0.07);
+  box-shadow: inset 0px -60px 0 0 rgba(0, 0, 0, 0.07);
+  background: -webkit-gradient(linear, left bottom, left top, from(#6083d9), to(#87b0f0));
+  background: linear-gradient(to top, #6083d9, #87b0f0);
+  opacity: 0.98;
+}
+
+#top .pum-container .form-element-html .submit-button:active {
+  -webkit-box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.07);
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.07);
+  -webkit-transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 ol.commentlist .comment-body {
