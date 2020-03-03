@@ -11760,7 +11760,7 @@ select {
   justify-content: space-between;
   -ms-flex-line-pack: justify;
   align-content: space-between;
-  padding: 10px 0;
+  padding: 10px 0 20px;
 }
 
 .top-section__wrapper {
@@ -11827,7 +11827,7 @@ select {
 
 @media screen and (min-width: 992px) {
   .top-section {
-    padding: 0;
+    padding: 0 0 30px;
     height: 100vh;
   }
   .top-section__wrapper {
@@ -11875,6 +11875,14 @@ select {
   box-shadow: none !important;
   padding: 35px;
   color: #192f34 !important;
+}
+
+#top-form .form-element-3 .form-element-html {
+  margin-bottom: 0;
+}
+
+#top-form .form-element-4 .form-element-html {
+  margin-bottom: 0;
 }
 
 #top-form .form-page-content {
@@ -12035,6 +12043,12 @@ select {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+  }
+  #top-form .form-element-3 .form-element-html {
+    margin-bottom: 20px;
+  }
+  #top-form .form-element-4 .form-element-html {
+    margin-bottom: 20px;
   }
   #top-form .fc-form {
     padding: 10px;
@@ -13003,6 +13017,30 @@ select {
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.07);
   -webkit-transform: scale(0.98);
   transform: scale(0.98);
+}
+
+.button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 20px;
+  margin-top: 15px;
+}
+
+.button-wrapper a {
+  min-width: 180px;
+  text-align: center;
 }
 
 ol.commentlist .comment-body {
@@ -14309,11 +14347,6 @@ hr.style-two {
   right: 8px;
   border: 5px solid #192f34;
   border-color: #192f34 transparent transparent transparent;
-}
-
-.nav .menu-item-current {
-  border-bottom: 5px solid #7298e4;
-  padding-bottom: 0;
 }
 
 .no-touch .nav .menu-item:hover .menu-link, .nav .menu-item-current .menu-link, .nav .menu-item.current-menu-parent .menu-link, .nav .menu-item.current-menu-ancestor .menu-link {

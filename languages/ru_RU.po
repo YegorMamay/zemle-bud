@@ -17,7 +17,15 @@ msgstr ""
 
 #: header.php:80
 msgid "Call back"
-msgstr "Обратный звонок"
+msgstr "Быстрый заказ"
+
+#: page-home.php:152
+msgid "Gallery link"
+msgstr "Все фото"
+
+#: page-home.php:211
+msgid "Review text"
+msgstr "Все отзывы"
 
 #: footer.php:16
 msgid "Developed by "

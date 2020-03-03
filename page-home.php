@@ -147,6 +147,11 @@ $special_top = get_field('special_top');
             <?php echo do_shortcode('[ess_grid alias="gallery"]'); ?>
         </div>
     </div>
+    <div class="button-wrapper">
+        <a href="/galereya" class="gallery-section__link btn btn-primary">
+            <?php _e('Gallery link', 'brainworks'); ?>
+        </a>
+    </div>
 </section>
 <section class="block-works" id="work">
     <div class="container">
@@ -210,6 +215,11 @@ $special_bottom = get_field('special_bottom');
         <h2 class="main-title"><?php echo get_post_meta(get_the_ID(), 'review_title', true); ?></h2>
         <div class="review-section__wrapper">
             <?php echo do_shortcode('[bw-reviews]'); ?>
+        </div>
+        <div class="button-wrapper">
+            <a href="<?php echo get_post_type_archive_link('reviews'); ?>" class="btn btn-primary">
+                <?php _e('Review text', 'brainworks'); ?>
+            </a>
         </div>
     </div>
 </section>

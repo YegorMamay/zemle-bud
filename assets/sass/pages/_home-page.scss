@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: space-between;
   align-content: space-between;
-  padding: 10px 0;
+  padding: 10px 0 20px;
 
   &__wrapper {
     width: 100%;
@@ -63,7 +63,7 @@
 
 @media screen and (min-width: 992px) {
   .top-section {
-    padding: 0;
+    padding: 0 0 30px;
     height: 100vh;
 
     &__wrapper {
@@ -120,6 +120,18 @@
     box-shadow: none !important;
     padding: 35px;
     color: $themeColorOne !important;
+  }
+
+  & .form-element-3 {
+    & .form-element-html {
+      margin-bottom: 0;
+    }
+  }
+
+  & .form-element-4 {
+    & .form-element-html {
+      margin-bottom: 0;
+    }
   }
 
   & .form-page-content {
@@ -222,6 +234,18 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+    }
+
+    & .form-element-3 {
+      & .form-element-html {
+        margin-bottom: 20px;
+      }
+    }
+
+    & .form-element-4 {
+      & .form-element-html {
+        margin-bottom: 20px;
+      }
     }
 
     & .fc-form {
@@ -989,5 +1013,20 @@
         }
       }
     }
+  }
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 20px;
+  margin-top: 15px;
+
+  & a {
+    min-width: 180px;
+    text-align: center;
   }
 }

@@ -18,6 +18,14 @@ msgstr ""
 msgid "Call back"
 msgstr ""
 
+#: page-home.php:152
+msgid "Gallery link"
+msgstr ""
+
+#: page-home.php:211
+msgid "Review text"
+msgstr ""
+
 #: footer.php:16
 msgid "Developed by "
 msgstr ""
